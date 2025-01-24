@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能目录</title>
+    <link rel="icon" href="file/file-logic.svg" type="image/x-icon">
+    <!-- 引入Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入Font Awesome图标库 -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="./css/sweetalert2.min.css">
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+<body>
+<!-- 左侧栏目 -->
+<div class="sidebar">
+    <div class="list-group">
+        <!-- 文件处理栏目 -->
+        <div class="list-group-item" onclick="toggleSubMenu('file-processing')">
+            <i class="fas fa-folder"></i> 文件处理
+        </div>
+        <div id="file-processing" class="sub-menu">
+            <div class="list-group-item" onclick="loadContent('./html/excelContentCopy.html')">
+                <i class="fas fa-file-excel"></i> Excel 内容复制
+            </div>
+            <!-- 未来可以在这里添加更多二级栏目 -->
+            <!-- <div class="list-group-item" onclick="loadContent('newFunction.html')">新功能</div> -->
+        </div>
+
+        <!-- 其他栏目 -->
+        <div class="list-group-item" onclick="toggleSubMenu('other-category')">
+            <i class="fas fa-folder"></i> 其他栏目
+        </div>
+        <div id="other-category" class="sub-menu">
+            <!-- 未来可以在这里添加更多二级栏目 -->
+            <!-- <div class="list-group-item" onclick="loadContent('anotherFunction.html')">另一个功能</div> -->
+        </div>
+    </div>
+</div>
+
+<!-- 右侧内容显示区域 -->
+<div class="content">
+    <iframe id="content-frame" src="about:blank"></iframe>
+</div>
+
+<!-- 引入Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

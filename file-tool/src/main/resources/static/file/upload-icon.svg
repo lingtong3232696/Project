@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- 背景矩形 -->
+  <rect x="8" y="8" width="48" height="48" rx="8" fill="#4CAF50" />
+  <!-- 向上的箭头 -->
+  <path d="M32 18l8 8h-6v10h-4V26h-6z" fill="#FFFFFF" />
+  <!-- 数据表格 -->
+  <rect x="16" y="32" width="32" height="4" fill="#FFFFFF" />
+  <rect x="16" y="38" width="32" height="4" fill="#FFFFFF" />
+  <rect x="16" y="44" width="32" height="4" fill="#FFFFFF" />
+</svg>

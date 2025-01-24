@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件处理系统</title>
+    <link rel="icon" href="./file/file-logic.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/sweetalert2.min.css">
+    <script src="./js/sweetalert2.min.js"></script>
+</head>
+<body>
+<div class="login-container">
+    <h2>文件处理系统</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="用户名" required>
+        <input type="password" id="password" placeholder="密码" required>
+        <input type="submit" value="登录">
+    </form>
+    <div id="errorMessage" class="error-message"></div>
+    <a href="#" class="forgot-password">忘记密码？</a>
+    <div class="register-link">
+        还没有账号？<a href="#">立即注册</a>
+    </div>
+</div>
+
+
+<script src="./jquery/jquery-3.7.1.min.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel 内容复制</title>
+    <link rel="icon" href="../file/file-logic.svg" type="image/x-icon">
+    <!-- 引入sweetalert2弹窗 -->
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/excelContentCopy.css">
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/public.js"></script>
+</head>
+<body>
+<div class="form-container">
+    <h2>Excel 内容复制(在线)</h2>
+    <form id="uploadForm" enctype="multipart/form-data"  method="POST">
+        <!-- 源文件部分 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="sourceFile">源文件</label>
+                <input type="file" id="sourceFile" name="sourceFile" required>
+            </div>
+            <div class="form-group">
+                <label for="sourceMatchColumn">源文件匹配列</label>
+                <select id="sourceMatchColumn" name="sourceMatchColumn" required>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sourceColumn">源文件获取列</label>
+                <select id="sourceColumn" name="sourceColumn" required>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 目标文件部分 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="targetFile">目标文件</label>
+                <input type="file" id="targetFile" name="targetFile" required>
+            </div>
+            <div class="form-group">
+                <label for="targetMatchColumn">目标文件匹配列</label>
+                <select id="targetMatchColumn" name="targetMatchColumn" required>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="targetColumn">目标文件填充列</label>
+                <select id="targetColumn" name="targetColumn" required>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 提交按钮 -->
+        <button type="submit" class="submit-button">提交</button>
+    </form>
+    <!-- 响应消息 -->
+    <div class="response-message" id="responseMessage"></div>
+</div>
+
+<!-- 引入 axios -->
+<script src="../js/axios.min.js"></script>
+<script src="../js/excelContentCopy.js">
+
+</script>
+</body>
+</html>
